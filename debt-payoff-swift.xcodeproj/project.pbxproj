@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		231E36A91CDC565500C08047 /* PayoffProgressMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E36A81CDC565500C08047 /* PayoffProgressMeter.swift */; };
+		232C90991CD717B300C3F7ED /* DebtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232C90981CD717B300C3F7ED /* DebtTableViewCell.swift */; };
+		232C909F1CD721CB00C3F7ED /* DebtTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232C909E1CD721CB00C3F7ED /* DebtTableViewController.swift */; };
+		232C90A11CD7222900C3F7ED /* DebtModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232C90A01CD7222900C3F7ED /* DebtModel.swift */; };
+		23A9A9BD1CC20FBB00E625EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9A9BC1CC20FBB00E625EA /* AppDelegate.swift */; };
+		23A9A9C21CC20FBB00E625EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A9A9C01CC20FBB00E625EA /* Main.storyboard */; };
+		23A9A9C41CC20FBB00E625EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A9A9C31CC20FBB00E625EA /* Assets.xcassets */; };
+		23A9A9C71CC20FBB00E625EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A9A9C51CC20FBB00E625EA /* LaunchScreen.storyboard */; };
+		23A9A9D21CC20FBB00E625EA /* debt_payoff_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9A9D11CC20FBB00E625EA /* debt_payoff_swiftTests.swift */; };
+		23A9A9DD1CC20FBB00E625EA /* debt_payoff_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9A9DC1CC20FBB00E625EA /* debt_payoff_swiftUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23A9A9CE1CC20FBB00E625EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23A9A9B11CC20FBB00E625EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23A9A9B81CC20FBB00E625EA;
+			remoteInfo = "debt-payoff-swift";
+		};
+		23A9A9D91CC20FBB00E625EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23A9A9B11CC20FBB00E625EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23A9A9B81CC20FBB00E625EA;
+			remoteInfo = "debt-payoff-swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		231E36A81CDC565500C08047 /* PayoffProgressMeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffProgressMeter.swift; sourceTree = "<group>"; };
+		232C90981CD717B300C3F7ED /* DebtTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DebtTableViewCell.swift; path = "debt-payoff-swift/DebtTableViewCell.swift"; sourceTree = "<group>"; };
+		232C909E1CD721CB00C3F7ED /* DebtTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtTableViewController.swift; sourceTree = "<group>"; };
+		232C90A01CD7222900C3F7ED /* DebtModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtModel.swift; sourceTree = "<group>"; };
+		23A9A9B91CC20FBB00E625EA /* debt-payoff-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "debt-payoff-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A9A9BC1CC20FBB00E625EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23A9A9C11CC20FBB00E625EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23A9A9C31CC20FBB00E625EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23A9A9C61CC20FBB00E625EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23A9A9C81CC20FBB00E625EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23A9A9CD1CC20FBB00E625EA /* debt-payoff-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "debt-payoff-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A9A9D11CC20FBB00E625EA /* debt_payoff_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = debt_payoff_swiftTests.swift; sourceTree = "<group>"; };
+		23A9A9D31CC20FBB00E625EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23A9A9D81CC20FBB00E625EA /* debt-payoff-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "debt-payoff-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A9A9DC1CC20FBB00E625EA /* debt_payoff_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = debt_payoff_swiftUITests.swift; sourceTree = "<group>"; };
+		23A9A9DE1CC20FBB00E625EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23A9A9B61CC20FBB00E625EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A9A9CA1CC20FBB00E625EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A9A9D51CC20FBB00E625EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23A9A9B01CC20FBB00E625EA = {
+			isa = PBXGroup;
+			children = (
+				231E36A81CDC565500C08047 /* PayoffProgressMeter.swift */,
+				232C90A01CD7222900C3F7ED /* DebtModel.swift */,
+				232C909E1CD721CB00C3F7ED /* DebtTableViewController.swift */,
+				232C90981CD717B300C3F7ED /* DebtTableViewCell.swift */,
+				23A9A9BB1CC20FBB00E625EA /* debt-payoff-swift */,
+				23A9A9D01CC20FBB00E625EA /* debt-payoff-swiftTests */,
+				23A9A9DB1CC20FBB00E625EA /* debt-payoff-swiftUITests */,
+				23A9A9BA1CC20FBB00E625EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23A9A9BA1CC20FBB00E625EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23A9A9B91CC20FBB00E625EA /* debt-payoff-swift.app */,
+				23A9A9CD1CC20FBB00E625EA /* debt-payoff-swiftTests.xctest */,
+				23A9A9D81CC20FBB00E625EA /* debt-payoff-swiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23A9A9BB1CC20FBB00E625EA /* debt-payoff-swift */ = {
+			isa = PBXGroup;
+			children = (
+				23A9A9BC1CC20FBB00E625EA /* AppDelegate.swift */,
+				23A9A9C01CC20FBB00E625EA /* Main.storyboard */,
+				23A9A9C31CC20FBB00E625EA /* Assets.xcassets */,
+				23A9A9C51CC20FBB00E625EA /* LaunchScreen.storyboard */,
+				23A9A9C81CC20FBB00E625EA /* Info.plist */,
+			);
+			path = "debt-payoff-swift";
+			sourceTree = "<group>";
+		};
+		23A9A9D01CC20FBB00E625EA /* debt-payoff-swiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				23A9A9D11CC20FBB00E625EA /* debt_payoff_swiftTests.swift */,
+				23A9A9D31CC20FBB00E625EA /* Info.plist */,
+			);
+			path = "debt-payoff-swiftTests";
+			sourceTree = "<group>";
+		};
+		23A9A9DB1CC20FBB00E625EA /* debt-payoff-swiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23A9A9DC1CC20FBB00E625EA /* debt_payoff_swiftUITests.swift */,
+				23A9A9DE1CC20FBB00E625EA /* Info.plist */,
+			);
+			path = "debt-payoff-swiftUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23A9A9B81CC20FBB00E625EA /* debt-payoff-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A9A9E11CC20FBB00E625EA /* Build configuration list for PBXNativeTarget "debt-payoff-swift" */;
+			buildPhases = (
+				23A9A9B51CC20FBB00E625EA /* Sources */,
+				23A9A9B61CC20FBB00E625EA /* Frameworks */,
+				23A9A9B71CC20FBB00E625EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "debt-payoff-swift";
+			productName = "debt-payoff-swift";
+			productReference = 23A9A9B91CC20FBB00E625EA /* debt-payoff-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23A9A9CC1CC20FBB00E625EA /* debt-payoff-swiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A9A9E41CC20FBB00E625EA /* Build configuration list for PBXNativeTarget "debt-payoff-swiftTests" */;
+			buildPhases = (
+				23A9A9C91CC20FBB00E625EA /* Sources */,
+				23A9A9CA1CC20FBB00E625EA /* Frameworks */,
+				23A9A9CB1CC20FBB00E625EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23A9A9CF1CC20FBB00E625EA /* PBXTargetDependency */,
+			);
+			name = "debt-payoff-swiftTests";
+			productName = "debt-payoff-swiftTests";
+			productReference = 23A9A9CD1CC20FBB00E625EA /* debt-payoff-swiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23A9A9D71CC20FBB00E625EA /* debt-payoff-swiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A9A9E71CC20FBB00E625EA /* Build configuration list for PBXNativeTarget "debt-payoff-swiftUITests" */;
+			buildPhases = (
+				23A9A9D41CC20FBB00E625EA /* Sources */,
+				23A9A9D51CC20FBB00E625EA /* Frameworks */,
+				23A9A9D61CC20FBB00E625EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23A9A9DA1CC20FBB00E625EA /* PBXTargetDependency */,
+			);
+			name = "debt-payoff-swiftUITests";
+			productName = "debt-payoff-swiftUITests";
+			productReference = 23A9A9D81CC20FBB00E625EA /* debt-payoff-swiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23A9A9B11CC20FBB00E625EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Kasey Cowley";
+				TargetAttributes = {
+					23A9A9B81CC20FBB00E625EA = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					23A9A9CC1CC20FBB00E625EA = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 23A9A9B81CC20FBB00E625EA;
+					};
+					23A9A9D71CC20FBB00E625EA = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 23A9A9B81CC20FBB00E625EA;
+					};
+				};
+			};
+			buildConfigurationList = 23A9A9B41CC20FBB00E625EA /* Build configuration list for PBXProject "debt-payoff-swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23A9A9B01CC20FBB00E625EA;
+			productRefGroup = 23A9A9BA1CC20FBB00E625EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23A9A9B81CC20FBB00E625EA /* debt-payoff-swift */,
+				23A9A9CC1CC20FBB00E625EA /* debt-payoff-swiftTests */,
+				23A9A9D71CC20FBB00E625EA /* debt-payoff-swiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23A9A9B71CC20FBB00E625EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A9A9C71CC20FBB00E625EA /* LaunchScreen.storyboard in Resources */,
+				23A9A9C41CC20FBB00E625EA /* Assets.xcassets in Resources */,
+				23A9A9C21CC20FBB00E625EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A9A9CB1CC20FBB00E625EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A9A9D61CC20FBB00E625EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23A9A9B51CC20FBB00E625EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				231E36A91CDC565500C08047 /* PayoffProgressMeter.swift in Sources */,
+				232C90991CD717B300C3F7ED /* DebtTableViewCell.swift in Sources */,
+				23A9A9BD1CC20FBB00E625EA /* AppDelegate.swift in Sources */,
+				232C90A11CD7222900C3F7ED /* DebtModel.swift in Sources */,
+				232C909F1CD721CB00C3F7ED /* DebtTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A9A9C91CC20FBB00E625EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A9A9D21CC20FBB00E625EA /* debt_payoff_swiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A9A9D41CC20FBB00E625EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A9A9DD1CC20FBB00E625EA /* debt_payoff_swiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23A9A9CF1CC20FBB00E625EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23A9A9B81CC20FBB00E625EA /* debt-payoff-swift */;
+			targetProxy = 23A9A9CE1CC20FBB00E625EA /* PBXContainerItemProxy */;
+		};
+		23A9A9DA1CC20FBB00E625EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23A9A9B81CC20FBB00E625EA /* debt-payoff-swift */;
+			targetProxy = 23A9A9D91CC20FBB00E625EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23A9A9C01CC20FBB00E625EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23A9A9C11CC20FBB00E625EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23A9A9C51CC20FBB00E625EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23A9A9C61CC20FBB00E625EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23A9A9DF1CC20FBB00E625EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23A9A9E01CC20FBB00E625EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23A9A9E21CC20FBB00E625EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "debt-payoff-swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.financialfreedom.debt-payoff-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		23A9A9E31CC20FBB00E625EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "debt-payoff-swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.financialfreedom.debt-payoff-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		23A9A9E51CC20FBB00E625EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "debt-payoff-swiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.financialfreedom.debt-payoff-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/debt-payoff-swift.app/debt-payoff-swift";
+			};
+			name = Debug;
+		};
+		23A9A9E61CC20FBB00E625EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "debt-payoff-swiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.financialfreedom.debt-payoff-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/debt-payoff-swift.app/debt-payoff-swift";
+			};
+			name = Release;
+		};
+		23A9A9E81CC20FBB00E625EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "debt-payoff-swiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.financialfreedom.debt-payoff-swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "debt-payoff-swift";
+			};
+			name = Debug;
+		};
+		23A9A9E91CC20FBB00E625EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "debt-payoff-swiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.financialfreedom.debt-payoff-swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "debt-payoff-swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23A9A9B41CC20FBB00E625EA /* Build configuration list for PBXProject "debt-payoff-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A9A9DF1CC20FBB00E625EA /* Debug */,
+				23A9A9E01CC20FBB00E625EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A9A9E11CC20FBB00E625EA /* Build configuration list for PBXNativeTarget "debt-payoff-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A9A9E21CC20FBB00E625EA /* Debug */,
+				23A9A9E31CC20FBB00E625EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A9A9E41CC20FBB00E625EA /* Build configuration list for PBXNativeTarget "debt-payoff-swiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A9A9E51CC20FBB00E625EA /* Debug */,
+				23A9A9E61CC20FBB00E625EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A9A9E71CC20FBB00E625EA /* Build configuration list for PBXNativeTarget "debt-payoff-swiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A9A9E81CC20FBB00E625EA /* Debug */,
+				23A9A9E91CC20FBB00E625EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23A9A9B11CC20FBB00E625EA /* Project object */;
+}

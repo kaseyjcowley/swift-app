@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yQ5-Da-4cA">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Debts-->
+        <scene sceneID="bhL-sj-8Oj">
+            <objects>
+                <tableViewController id="haq-C2-cwE" customClass="DebtTableViewController" customModule="debt_payoff_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="1f3-Tn-UPe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DebtTableViewCell" rowHeight="90" id="XIM-Ap-laO" customClass="DebtTableViewCell" customModule="debt_payoff_swift" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="XIM-Ap-laO" id="nnt-B9-jQm">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfM-Cr-4MD" userLabel="Balance Label">
+                                            <rect key="frame" x="518" y="22" width="72" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DebtName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZi-2e-N8p">
+                                            <rect key="frame" x="10" y="23.5" width="87" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="PaymentLabel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyg-y7-eQw">
+                                            <rect key="frame" x="500.5" y="45" width="91.5" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.76045075259999995" green="0.76045075259999995" blue="0.76045075259999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PayoffDate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXs-Ip-d6G" userLabel="Payoff Date">
+                                            <rect key="frame" x="10" y="45" width="300" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.76045075259999995" green="0.76045075259999995" blue="0.76045075259999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="OfM-Cr-4MD" firstAttribute="trailing" secondItem="eyg-y7-eQw" secondAttribute="trailing" constant="-2" id="0iA-Qu-hCR"/>
+                                        <constraint firstItem="eyg-y7-eQw" firstAttribute="centerY" secondItem="wXs-Ip-d6G" secondAttribute="centerY" id="51k-CL-RiC"/>
+                                        <constraint firstItem="wXs-Ip-d6G" firstAttribute="leading" secondItem="VZi-2e-N8p" secondAttribute="leading" id="Tvx-3h-eZH"/>
+                                        <constraint firstItem="OfM-Cr-4MD" firstAttribute="centerY" secondItem="VZi-2e-N8p" secondAttribute="centerY" id="Yuw-1e-qtP"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="OfM-Cr-4MD" firstAttribute="bottom" secondItem="XIM-Ap-laO" secondAttribute="centerY" constant="1" id="4l3-Ji-njc"/>
+                                    <constraint firstItem="eyg-y7-eQw" firstAttribute="top" secondItem="XIM-Ap-laO" secondAttribute="centerY" id="FCf-TJ-X7D"/>
+                                    <constraint firstItem="OfM-Cr-4MD" firstAttribute="trailing" secondItem="XIM-Ap-laO" secondAttribute="trailing" constant="-10" id="NtB-jP-ITC"/>
+                                    <constraint firstItem="wXs-Ip-d6G" firstAttribute="width" secondItem="XIM-Ap-laO" secondAttribute="width" multiplier="0.5" id="V5d-lg-87J"/>
+                                    <constraint firstItem="VZi-2e-N8p" firstAttribute="leading" secondItem="XIM-Ap-laO" secondAttribute="leading" constant="10" id="cqc-S9-xDT"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="amountLabel" destination="OfM-Cr-4MD" id="efq-tC-MOw"/>
+                                    <outlet property="debtNameLabel" destination="VZi-2e-N8p" id="FqR-Qx-HZr"/>
+                                    <outlet property="paymentLabel" destination="eyg-y7-eQw" id="SCk-Cc-LUm"/>
+                                    <outlet property="payoffDateLabel" destination="wXs-Ip-d6G" id="35v-IO-i5d"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="haq-C2-cwE" id="3Sh-se-vuH"/>
+                            <outlet property="delegate" destination="haq-C2-cwE" id="vvj-kH-cxP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Debts" id="XXH-41-5Jm" userLabel="Debts"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3SV-fG-dCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Iw-fr-0xB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yQ5-Da-4cA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sYc-Hg-KhU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="haq-C2-cwE" kind="relationship" relationship="rootViewController" id="Svb-r3-wwR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tWG-4T-2KG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="366"/>
+        </scene>
+    </scenes>
+</document>
