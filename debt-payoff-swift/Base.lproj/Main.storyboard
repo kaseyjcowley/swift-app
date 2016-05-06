@@ -75,11 +75,43 @@
                             <outlet property="delegate" destination="haq-C2-cwE" id="vvj-kH-cxP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Debts" id="XXH-41-5Jm" userLabel="Debts"/>
+                    <navigationItem key="navigationItem" title="Debts" id="XXH-41-5Jm" userLabel="Debts">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="akz-R7-4uI">
+                            <connections>
+                                <segue destination="NPz-Kv-kxg" kind="presentation" identifier="AddDebt" id="I6h-ba-vcf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3SV-fG-dCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1202" y="366"/>
+        </scene>
+        <!--Add a Debt-->
+        <scene sceneID="VQu-I8-2BL">
+            <objects>
+                <viewController id="GhK-aH-v7F" userLabel="Add a Debt" customClass="AddDebtViewController" customModule="debt_payoff_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6hs-SY-xGh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wqn-bb-GdB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nya-KL-23J" userLabel="AddDebtViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add a Debt" id="ZkE-Wf-lGU">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="RHP-1x-UYH">
+                            <connections>
+                                <action selector="cancel:" destination="GhK-aH-v7F" id="R9K-Go-XVv"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="Gi2-Ii-4fK"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bzs-6c-gKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2688" y="366"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Iw-fr-0xB">
@@ -97,7 +129,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWG-4T-2KG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="366"/>
+            <point key="canvasLocation" x="450" y="366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FGJ-3M-tIu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NPz-Kv-kxg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="glf-ng-AdG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GhK-aH-v7F" kind="relationship" relationship="rootViewController" id="uFP-re-6BL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mqS-aA-7vk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1944" y="366"/>
         </scene>
     </scenes>
 </document>

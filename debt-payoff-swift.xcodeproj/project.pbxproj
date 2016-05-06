@@ -17,6 +17,7 @@
 		23A9A9C71CC20FBB00E625EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A9A9C51CC20FBB00E625EA /* LaunchScreen.storyboard */; };
 		23A9A9D21CC20FBB00E625EA /* debt_payoff_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9A9D11CC20FBB00E625EA /* debt_payoff_swiftTests.swift */; };
 		23A9A9DD1CC20FBB00E625EA /* debt_payoff_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9A9DC1CC20FBB00E625EA /* debt_payoff_swiftUITests.swift */; };
+		23DABF771CDC6A1F00D6A137 /* AddDebtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DABF761CDC6A1F00D6A137 /* AddDebtViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		23A9A9D81CC20FBB00E625EA /* debt-payoff-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "debt-payoff-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A9A9DC1CC20FBB00E625EA /* debt_payoff_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = debt_payoff_swiftUITests.swift; sourceTree = "<group>"; };
 		23A9A9DE1CC20FBB00E625EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23DABF761CDC6A1F00D6A137 /* AddDebtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDebtViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		23A9A9B01CC20FBB00E625EA = {
 			isa = PBXGroup;
 			children = (
+				23DABF761CDC6A1F00D6A137 /* AddDebtViewController.swift */,
 				231E36A81CDC565500C08047 /* PayoffProgressMeter.swift */,
 				232C90A01CD7222900C3F7ED /* DebtModel.swift */,
 				232C909E1CD721CB00C3F7ED /* DebtTableViewController.swift */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				231E36A91CDC565500C08047 /* PayoffProgressMeter.swift in Sources */,
+				23DABF771CDC6A1F00D6A137 /* AddDebtViewController.swift in Sources */,
 				232C90991CD717B300C3F7ED /* DebtTableViewCell.swift in Sources */,
 				23A9A9BD1CC20FBB00E625EA /* AppDelegate.swift in Sources */,
 				232C90A11CD7222900C3F7ED /* DebtModel.swift in Sources */,
