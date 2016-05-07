@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -98,7 +99,62 @@
                     <view key="view" contentMode="scaleToFill" id="Nya-KL-23J" userLabel="AddDebtViewController">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LS-wl-jhi">
+                                <rect key="frame" x="42" y="120" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TAZ-9j-hV1" userLabel="NameTextField">
+                                <rect key="frame" x="100" y="116" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QWp-En-4jN" userLabel="AmountTextField">
+                                <rect key="frame" x="100" y="154" width="480" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2uM-YJ-maJ" userLabel="PaymentTextField">
+                                <rect key="frame" x="100" y="192" width="480" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKh-md-p9R">
+                                <rect key="frame" x="20" y="196" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W78-D0-pff">
+                                <rect key="frame" x="27" y="158" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="2uM-YJ-maJ" firstAttribute="leading" secondItem="QWp-En-4jN" secondAttribute="leading" id="4HH-Zz-H6d"/>
+                            <constraint firstItem="6LS-wl-jhi" firstAttribute="top" secondItem="6hs-SY-xGh" secondAttribute="bottom" constant="56" id="ITm-0T-YVn"/>
+                            <constraint firstItem="W78-D0-pff" firstAttribute="centerY" secondItem="QWp-En-4jN" secondAttribute="centerY" id="L3N-e8-YM7"/>
+                            <constraint firstItem="2uM-YJ-maJ" firstAttribute="leading" secondItem="aKh-md-p9R" secondAttribute="trailing" constant="8" symbolic="YES" id="MTO-kb-Ld3"/>
+                            <constraint firstItem="TAZ-9j-hV1" firstAttribute="trailing" secondItem="Nya-KL-23J" secondAttribute="trailingMargin" id="RSg-LI-hAc"/>
+                            <constraint firstItem="6LS-wl-jhi" firstAttribute="leading" secondItem="Nya-KL-23J" secondAttribute="leadingMargin" constant="22" id="T4O-kt-6XR"/>
+                            <constraint firstItem="QWp-En-4jN" firstAttribute="trailing" secondItem="TAZ-9j-hV1" secondAttribute="trailing" id="bPk-rO-idR"/>
+                            <constraint firstItem="aKh-md-p9R" firstAttribute="centerY" secondItem="2uM-YJ-maJ" secondAttribute="centerY" id="drl-z0-5ah"/>
+                            <constraint firstItem="QWp-En-4jN" firstAttribute="leading" secondItem="TAZ-9j-hV1" secondAttribute="leading" id="fYZ-eY-QiH"/>
+                            <constraint firstItem="TAZ-9j-hV1" firstAttribute="leading" secondItem="6LS-wl-jhi" secondAttribute="trailing" constant="8" symbolic="YES" id="flh-X5-xIl"/>
+                            <constraint firstItem="QWp-En-4jN" firstAttribute="leading" secondItem="W78-D0-pff" secondAttribute="trailing" constant="8" symbolic="YES" id="fyA-CG-3i6"/>
+                            <constraint firstItem="2uM-YJ-maJ" firstAttribute="top" secondItem="QWp-En-4jN" secondAttribute="bottom" constant="8" symbolic="YES" id="hhZ-p8-UyR"/>
+                            <constraint firstItem="2uM-YJ-maJ" firstAttribute="trailing" secondItem="QWp-En-4jN" secondAttribute="trailing" id="lWV-VD-55E"/>
+                            <constraint firstItem="QWp-En-4jN" firstAttribute="top" secondItem="TAZ-9j-hV1" secondAttribute="bottom" constant="8" symbolic="YES" id="tUa-88-cOr"/>
+                            <constraint firstItem="6LS-wl-jhi" firstAttribute="centerY" secondItem="TAZ-9j-hV1" secondAttribute="centerY" id="uIH-Ir-L3C"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add a Debt" id="ZkE-Wf-lGU">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="RHP-1x-UYH">
@@ -106,10 +162,21 @@
                                 <action selector="cancel:" destination="GhK-aH-v7F" id="R9K-Go-XVv"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="Gi2-Ii-4fK"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="Gi2-Ii-4fK">
+                            <connections>
+                                <segue destination="qxs-MQ-bH8" kind="unwind" unwindAction="unwindToDebtList:" id="uBG-K2-wpK"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="amountTextField" destination="QWp-En-4jN" id="8L1-gM-hFH"/>
+                        <outlet property="nameTextField" destination="TAZ-9j-hV1" id="YZp-QD-RbT"/>
+                        <outlet property="paymentTextField" destination="2uM-YJ-maJ" id="T4t-oJ-wGF"/>
+                        <outlet property="saveButton" destination="Gi2-Ii-4fK" id="haT-Yu-zL8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzs-6c-gKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="qxs-MQ-bH8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2688" y="366"/>
         </scene>

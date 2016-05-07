@@ -29,6 +29,14 @@ class DebtTableViewController: UITableViewController {
     )
   }
   
+  @IBAction func unwindToDebtList(sender: UIStoryboardSegue) {
+    if let sourceViewController = sender.sourceViewController as? AddDebtViewController, debt = sourceViewController.debt {
+      let newIndexPath = NSIndexPath(forRow: debts.count, inSection: 0)
+      debts.append(debt)
+      tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Bottom)
+    }
+  }
+  
   override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
     return 1
   }
